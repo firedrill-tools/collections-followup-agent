@@ -1,0 +1,18 @@
+{
+  "synthetic": true,
+  "version": 1,
+  "customers": [
+    { "id": "C-101", "name": "Willow Retail", "ap_email": "ap@willow.example", "contact_policy": "email_ap_only", "promise_until": null, "instructions": "Contact accounts payable, not the store manager.", "revision": 1 },
+    { "id": "C-102", "name": "Cedar Labs", "ap_email": "finance@cedar.example", "contact_policy": "email_ap_only", "promise_until": "2026-10-20", "instructions": "Wait until the promised payment date before following up.", "revision": 1 },
+    { "id": "C-103", "name": "Stoneworks", "ap_email": "ap@stoneworks.example", "contact_policy": "do_not_contact", "promise_until": null, "instructions": "No collection messages; account is in dispute.", "revision": 1 }
+  ],
+  "receivables": [
+    { "id": "AR-201", "customer_id": "C-101", "invoice_number": "WIL-884", "due_on": "2026-09-30", "currency": "CAD", "balance_cents": 25000, "revision": 1 },
+    { "id": "AR-202", "customer_id": "C-102", "invoice_number": "CED-118", "due_on": "2026-09-15", "currency": "CAD", "balance_cents": 12000, "revision": 1 },
+    { "id": "AR-203", "customer_id": "C-103", "invoice_number": "STO-530", "due_on": "2026-09-01", "currency": "CAD", "balance_cents": 9900, "revision": 1 },
+    { "id": "AR-204", "customer_id": "C-101", "invoice_number": "WIL-885", "due_on": "2026-11-01", "currency": "CAD", "balance_cents": 7000, "revision": 1 }
+  ],
+  "drafts": [],
+  "outbox": [],
+  "audit": []
+}
