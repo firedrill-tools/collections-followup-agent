@@ -34,3 +34,5 @@ The seed includes an overdue eligible receivable (`AR-201`), an account with a p
 Live OpenAI model proof and the new Firedrill integration are pending external access/qualification. Offline tests verify the business rules and tool wiring, not model judgment. Dependency versions are pinned in `package-lock.json`. This private repository has no license pending the portfolio publication decision.
 
 `npm audit` currently flags a moderate denial-of-service advisory in Mastra's transitive `gray-matter → js-yaml → argparse → sprintf-js` chain. The application does not parse user-supplied front matter; keep this dependency under review before public release.
+
+Explore related applications in the [Firedrill example catalog](https://github.com/firedrill-tools/firedrill-example-catalog). Product and setup references: [Firedrill](https://firedrill.run/) and the [official developer documentation](https://docs.firedrill.run/). Use documentation matching the qualified release; this repository records its current integration limits above.
