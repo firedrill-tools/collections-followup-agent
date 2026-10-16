@@ -9,3 +9,9 @@ Argparse 2's legacy `version` constructor option registers a version action with
 `tests/dependency.test.ts` exercises YAML front-matter parsing/serialization, CLI help/version, both stdin conversion modes and invalid-input errors. The application suite also exercises the local tool/state boundaries. Run `npm audit --omit=dev` to inspect the resolved runtime tree. Remove this override/repair together when a future dependency chain has been qualified against these contracts.
 
 Upstream reference: [Argparse changelog and legacy API removal](https://github.com/nodeca/argparse/blob/master/CHANGELOG.md).
+
+## Dataset and complete-source qualification
+
+`build-datasets.mjs` deterministically generates twelve fictional invoice/CRM populations. The compiled loader pins the exact index hash; regeneration verifies original payment sums/dates and current source. `--check` refuses drift. Case/task/history metadata is outside model-facing tools.
+
+`package.mjs` emits a complete source USTAR/gzip with fixed metadata and portable uncompressed DEFLATE blocks, exact per-file SHA256/size/mode manifest, and no dependency on Git, checkout timestamps or compressor version. Installed caches, private state and built output are excluded. `check-package.mjs` extracts outside checkout, runs fresh `npm ci`, checks all private cases/readback/reset, missing-key and default key-free plan, actual installed Mastra/OpenAI HTTP CLI with synthetic outbox, the full suite and unchanged original delivered bytes. `npm ci` runs the existing guarded argparse repair. Qualification requires Node/npm and the system `tar` utility; runtime needs Node only after build/install. CI retains the source/qualification record.

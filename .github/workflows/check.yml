@@ -12,4 +12,13 @@ jobs:
           node-version: '22'
           cache: npm
       - run: npm ci
+      - run: npm run datasets:check
       - run: npm run check
+      - run: npm run package
+      - run: npm run check:package
+      - uses: actions/upload-artifact@v4
+        with:
+          name: collections-source
+          path: |
+            dist/collections-followup-agent-0.2.0-source.tar.gz
+            dist/qualification.json
