@@ -14,6 +14,8 @@ jobs:
       - run: npm ci
       - run: npm run datasets:check
       - run: npm run check
+      - run: npm ci --prefix firedrill --ignore-scripts --no-audit --no-fund
+      - run: npm test --prefix firedrill
       - run: npm run package
       - run: npm run check:package
       - uses: actions/upload-artifact@v4

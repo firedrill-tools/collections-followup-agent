@@ -78,6 +78,9 @@ try {
   run("npm", ["ci", "--no-audit", "--no-fund"], directory);
   run("npm", ["run", "build"], directory);
   run(process.execPath, ["scripts/build-datasets.mjs", "--check"], directory);
+  if (!fs.existsSync(path.join(directory, "firedrill/scenario.json")) || fs.existsSync(path.join(directory, "firedrill/node_modules"))) throw Error("archive integration boundary differs");
+  run("npm", ["ci", "--prefix", "firedrill", "--ignore-scripts", "--no-audit", "--no-fund"], directory);
+  run("npm", ["test", "--prefix", "firedrill"], directory);
   const cli = path.join(directory, "dist/src/cli.js");
   run(process.execPath, [cli, "--help"]);
   const cases = JSON.parse(run(process.execPath, [cli, "datasets"]));
