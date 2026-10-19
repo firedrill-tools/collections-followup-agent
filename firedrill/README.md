@@ -17,7 +17,7 @@ node "$firedrill_cli" validate firedrill/scenario.json --json --non-interactive
 
 Validation is offline and allocates no batch. Authorize and select the actual project/environment with `node "$firedrill_cli" init` in a human terminal. Automation uses `FIREDRILL_TOKEN`, `FIREDRILL_PROJECT_ID` and `FIREDRILL_ENVIRONMENT_ID` from its secret store. The application independently requires `OPENAI_API_KEY` and an enabled `COLLECTIONS_MODEL` or recipe `configuration.parameters.model`. Keep credentials out of recipes and source.
 
-## Execute the actual coordinator
+## Execute the actual application
 
 With an authorized provider budget:
 
