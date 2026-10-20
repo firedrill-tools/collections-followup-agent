@@ -2,6 +2,8 @@
 
 A Mastra/OpenAI CLI reviews fictional receivables and CRM contact instructions, prepares a fixed respectful payment follow-up, and records it in a local synthetic outbox. It rechecks current payment balance, customer policy, promise date, recipient, complete source snapshot and both revisions immediately before committing a message. One invoice can have one follow-up, including when different processes prepared separate drafts.
 
+This example repository is publicly viewable. A project license has not been selected.
+
 ## Simulate with Firedrill
 
 [Firedrill](https://firedrill.run/) is a simulation platform for AI agents.
@@ -72,7 +74,7 @@ npm run check:package
 
 The complete deterministic source archive includes code, data, original fixtures, tests, scripts, docs, CI and lockfiles with exact per-file manifest; private state, dependencies and builds are excluded. Its qualification script installs from the extracted archive outside checkout with `npm ci`, initializes/reads/resets every case, exercises the installed actual native CLI over local HTTP, runs all tests and verifies every original delivered file is unchanged. CI retains the source archive and qualification record.
 
-Live OpenAI semantic/billing proof, authenticated persisted Firedrill runs and publication/license remain parked external gates. This private repo has no license until the portfolio publication decision. The guarded argparse compatibility repair and its removal criteria are in [scripts/README.md](scripts/README.md).
+Live OpenAI semantic/billing proof, authenticated persisted Firedrill runs and license remain parked external gates. This repository is publicly viewable; no project license has been selected. The guarded argparse compatibility repair and its removal criteria are in [scripts/README.md](scripts/README.md).
 
 References: [Mastra Agent](https://mastra.ai/reference/agents/agent), [AI SDK OpenAI provider](https://ai-sdk.dev/providers/ai-sdk-providers/openai), [Firedrill example catalog](https://github.com/firedrill-tools/firedrill-example-catalog), [Firedrill](https://firedrill.run/), [Firedrill documentation](https://docs.firedrill.run/). The pinned installed source governs this qualification; current online documentation can describe a newer interface.
 
