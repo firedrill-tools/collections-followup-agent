@@ -76,7 +76,7 @@ The complete deterministic source archive includes code, data, original fixtures
 
 Live OpenAI semantic/billing proof, authenticated persisted Firedrill runs and license remain parked external gates. This repository is publicly viewable; no project license has been selected. The guarded argparse compatibility repair and its removal criteria are in [scripts/README.md](scripts/README.md).
 
-References: [Mastra Agent](https://mastra.ai/reference/agents/agent), [AI SDK OpenAI provider](https://ai-sdk.dev/providers/ai-sdk-providers/openai), [Firedrill example catalog](https://github.com/firedrill-tools/firedrill-example-catalog), [Firedrill](https://firedrill.run/), [Firedrill documentation](https://docs.firedrill.run/). The pinned installed source governs this qualification; current online documentation can describe a newer interface.
+References: [Mastra Agent](https://mastra.ai/reference/agents/agent), [AI SDK OpenAI provider](https://ai-sdk.dev/providers/ai-sdk-providers/openai), [Firedrill examples](https://docs.firedrill.run/guides/examples), [Firedrill](https://firedrill.run/), [Firedrill documentation](https://docs.firedrill.run/). The pinned installed source governs this qualification; current online documentation can describe a newer interface.
 
 ## Current Firedrill integration
 
